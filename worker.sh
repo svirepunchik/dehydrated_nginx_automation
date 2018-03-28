@@ -15,7 +15,7 @@ mkdir -p `dirname $logfile`
 
 if [[ -f $flag ]]; then
     echo $(date +"%Y-%m-%d %H:%M:%S") found new certs from dehydrated. starting nginx config test >> $logfile
-    $nginx configtest >> $logfile
+    $nginx -t >> $logfile
     if [[ $? -eq 0 ]]; then
 	echo $(date +"%Y-%m-%d %H:%M:%S") OK. restarting nginx >> $logfile
 	service nginx restart >> $logfile
