@@ -2,6 +2,8 @@
 
 # 2018-03-28 svirepunchik@gmail.com
 
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+
 # log file location & name
 logfile=/var/log/nginx/dna.log
 
